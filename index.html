@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How may I help you, Kabir?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sun: #ffc72c;
+    --ink: #1b1464;
+    --pink: #ff8fab;
+    --mint: #7fe0b5;
+    --sky: #8ecbff;
+    --paper: #fffaf0;
+  }
+  * { box-sizing: border-box; }
+  html, body { min-height: 100%; margin: 0; }
+  body {
+    background: var(--sun);
+    color: var(--ink);
+    font-family: "Bricolage Grotesque", "Segoe UI", system-ui, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 20px;
+    min-height: 100vh;
+  }
+  main { width: 100%; max-width: 440px; }
+  h1 {
+    font-size: clamp(2rem, 8vw, 2.9rem);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin: 0 0 12px;
+  }
+  .sub { font-size: 1.1rem; font-weight: 500; margin: 0 0 36px; }
+  .links { display: flex; flex-direction: column; gap: 22px; }
+  a.btn {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 20px;
+    border: 3px solid var(--ink);
+    border-radius: 20px;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    box-shadow: 7px 7px 0 var(--ink);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  a.btn:hover { transform: translate(-2px, -2px); box-shadow: 9px 9px 0 var(--ink); }
+  a.btn:active { transform: translate(7px, 7px); box-shadow: 0 0 0 var(--ink); }
+  a.btn:focus-visible { outline: 4px solid var(--paper); outline-offset: 4px; }
+  .b1 { background: var(--sky); }
+  .b2 { background: var(--mint); }
+  .b3 { background: var(--pink); }
+  .ico {
+    flex: none;
+    width: 62px; height: 62px;
+    background: var(--paper);
+    border: 3px solid var(--ink);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  .ico svg { width: 34px; height: 34px; }
+  .chev { margin-left: auto; width: 26px; height: 26px; flex: none; }
+  @media (prefers-reduced-motion: reduce) { a.btn { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>How may I help you, Kabir?</h1>
+  <p class="sub">Choose one to get started.</p>
+
+  <div class="links">
+    <a class="btn b1" href="https://bhuvenkhatri.github.io/INVOICE/">
+      <span class="ico">
+        <svg viewBox="0 0 32 32" fill="none" stroke="#1b1464" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8 3h16v26l-4-3-4 3-4-3-4 3z"/><path d="M12 10h8M12 15h8M12 20h4"/>
+        </svg>
+      </span>
+      Invoice
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="#1b1464" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </a>
+
+    <a class="btn b2" href="https://bhuvenkhatri.github.io/order/">
+      <span class="ico">
+        <svg viewBox="0 0 32 32" fill="none" stroke="#1b1464" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 3l11 5v16l-11 5-11-5V8z"/><path d="M5 8l11 5 11-5M16 13v16"/>
+        </svg>
+      </span>
+      Order
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="#1b1464" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </a>
+
+    <a class="btn b3" href="https://bhuvenkhatri.github.io/sticker/#0">
+      <span class="ico">
+        <svg viewBox="0 0 32 32" fill="none" stroke="#1b1464" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 3l3.8 7.7 8.5 1.2-6.1 6 1.4 8.4L16 22.3l-7.6 4 1.4-8.4-6.1-6 8.5-1.2z"/>
+        </svg>
+      </span>
+      Sticker
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="#1b1464" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</main>
+</body>
+</html>
